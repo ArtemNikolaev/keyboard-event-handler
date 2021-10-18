@@ -25,6 +25,7 @@
   // generating table
 
   const table = document.createElement('table');
+  table.classList = ['table'];
   {
     const thead = document.createElement('thead');
     {
@@ -51,6 +52,7 @@
       value.innerText = 'No Input';
 
       const tr = document.createElement('tr');
+      tr.classList= ['table-danger'];
 
       tr.append(key);
       tr.append(value);
