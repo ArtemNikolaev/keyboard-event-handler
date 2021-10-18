@@ -21,4 +21,47 @@
   }
 }());
 
+(function() {
+  // generating table
+
+  const table = document.createElement('table');
+  {
+    const thead = document.createElement('thead');
+    {
+      const key = document.createElement('td');
+      key.innerText = 'Key';
+
+      const value = document.createElement('td');
+      value.innerText = 'Value';
+
+      const tr = document.createElement('tr');
+
+      tr.append(key);
+      tr.append(value);
+
+      thead.append(tr);
+    }
+
+    const tbody = document.createElement('tbody');
+    {
+      const key = document.createElement('td');
+      key.innerText = 'No Input';
+
+      const value = document.createElement('td');
+      value.innerText = 'No Input';
+
+      const tr = document.createElement('tr');
+
+      tr.append(key);
+      tr.append(value);
+
+      tbody.append(tr);
+    }
+
+    table.appendChild(thead);
+    table.appendChild(tbody);
+  }
+
+  document.querySelector('body').append(table);
+})();
 // Place any jQuery/helper plugins in here.
